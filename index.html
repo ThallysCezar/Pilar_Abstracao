@@ -54,6 +54,25 @@
        let cadeira = new Cadeiras(4, false, 'azul');
        cadeira.girarCadeira();
 
+       class Sofas {
+           constructor(quantidade_lugares, confortavel, cor){
+                this.quantidade_lugares = quantidade_lugares;
+                this.confortavel = confortavel;
+                this.cor = cor;
+           }
+
+           confortavelSofa(){
+               if(this.confortavel === true){
+                console.log('O Sofá é confortável');
+               } else {
+                console.log('O Sofá é não é confortável');
+               }
+           }
+       }
+
+       let sofa = new Sofas(3, true, 'azul');
+       sofa.confortavelSofa();
+
     </script>
 </head>
 <body>
