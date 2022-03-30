@@ -10,8 +10,8 @@
     <script type="text/babel">
         //a ideia desse treinamento é um software de marcenaria
         //metodos envolvidos sao: Cadeiras e Sofa
-        //com paradigma procedural
-
+        //com paradigma Procedural
+        /*
         let cadeiras = Array();
 
         cadeiras[0] = Array();
@@ -32,6 +32,27 @@
             }
         }
         girar_cadeira(0);
+        */
+
+       //paradigma Orientado a Objetos
+       class Cadeiras {
+           constructor(quantidade_pernas, giratoria, cor){
+                this.quantidade_pernas = quantidade_pernas;
+                this.giratoria = giratoria;
+                this.cor = cor;
+           }
+
+           girarCadeira(){
+               if(this.giratoria === true){
+                console.log('Girou');
+               } else {
+                console.log('A cadeira não é giratória');
+               }
+           }
+       }
+
+       let cadeira = new Cadeiras(4, false, 'azul');
+       cadeira.girarCadeira();
 
     </script>
 </head>
