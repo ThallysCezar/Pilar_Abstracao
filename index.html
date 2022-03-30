@@ -8,7 +8,30 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <!-- Your custom script here -->
     <script type="text/babel">
-        
+        //a ideia desse treinamento é um software de marcenaria
+        //metodos envolvidos sao: Cadeiras e Sofa
+        //com paradigma procedural
+
+        let cadeiras = Array();
+
+        cadeiras[0] = Array();
+        cadeiras[0]['quantidade_pernas'] = 4;
+        cadeiras[0]['giratoria'] = false;
+        cadeiras[0]['cor'] = 'azul';
+
+        cadeiras[1] = Array();
+        cadeiras[1]['quantidade_pernas'] = 1;
+        cadeiras[1]['giratoria'] = true;
+        cadeiras[1]['cor'] = 'vermelha';
+
+        function girar_cadeira(indice) {
+            if(cadeiras[indice]['giratoria'] === true){
+                console.log('Girou');
+            } else {
+                console.log('A cadeira não é giratória');
+            }
+        }
+
     </script>
 </head>
 <body>
